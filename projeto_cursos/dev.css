@@ -1,0 +1,103 @@
+/* *asterisco significa zerar todo o espaçamento do site */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* body representa todo o corpo do site */
+body{
+    /* altura total do site */
+      min-width: 100vh; 
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(56, 53, 53);
+}
+
+header{
+    background-color: black;
+    color: rgb(255, 1, 1);
+    text-align: center;
+    padding: 30px;
+}
+header h1{
+    margin-bottom: 15px;
+}
+header p{
+    color: rgb(235, 227, 227);
+    margin-bottom: 15px;
+    
+}
+
+.produto{
+
+background-color: white;
+
+flex:1;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:50px;
+
+padding:50px;
+
+}
+
+.imagem img{
+
+width:800px;
+
+height: 400px;
+
+border-radius:10px;
+
+}
+
+.informacoes{
+
+width:400px;
+
+}
+
+.informacoes h2{
+
+color:#2563eb;
+
+margin-bottom:20px;
+
+}
+
+.informacoes p{
+
+margin-bottom:15px;
+
+}
+
+.informacoes h3{
+
+color:green;
+
+margin:20px 0;
+
+}
+
+.informacoes button{
+
+width:200px;
+
+padding:12px;
+
+margin:10px;
+
+border:none;
+
+border-radius:5px;
+
+background:#2563eb;
+
+color:white;
+
+}
