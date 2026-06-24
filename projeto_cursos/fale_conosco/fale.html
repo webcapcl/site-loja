@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Informativa & Contato</title>
+    <style>
+        /* Estilos Globais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Seção Informativa */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 20px;
+        }
+
+        header h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+        }
+
+        .info-section {
+            margin-bottom: 40px;
+        }
+
+        .info-section h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        /* Formulário Fale Conosco */
+        .contact-section h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #4a5568;
+        }
+
+        .form-group input, 
+        .form-group select, 
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 1rem;
+            color: #333;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus, 
+        .form-group select:focus, 
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .btn-submit {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-submit:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Central de Atendimento</h1>
+            <p>Encontre informações úteis ou entre em contato direto com a nossa equipe.</p>
+        </header>
+
+        <section class="info-section">
+            <h2>Como podemos ajudar?</h2>
+            <p>Seja bem-vindo ao nosso canal de suporte. Antes de enviar sua mensagem, lembre-se de verificar nossos horários de atendimento:</p>
+            <br>
+            <ul>
+                <li><strong>Atendimento Online:</strong> Segunda a Sexta, das 9h às 18h.</li>
+                <li><strong>Prazo de Resposta:</strong> Retornamos o seu contato em até 24 horas úteis.</li>
+                <li><strong>Dica:</strong> Seja o mais específico possível no campo de mensagem para que possamos resolver sua dúvida rapidamente.</li>
+            </ul>
+        </section>
+
+        <hr style="border: 0; height: 1px; background: #eee; margin-bottom: 40px;">
+
+        <section class="contact-section">
+            <h2>Fale Conosco</h2>
+            
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail Corporativo ou Pessoal</label>
+                    <input type="email" id="email" name="email" placeholder="seu-email@exemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="assunto">Assunto</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="" disabled selected>Selecione o motivo do contato</option>
+                        <option value="duvida">Dúvidas Gerais</option>
+                        <option value="suporte">Suporte Técnico</option>
+                        <option value="comercial">Setor Comercial / Parcerias</option>
+                        <option value="sugestao">Sugestões e Elogios</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem em detalhes..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Mensagem</button>
+            </form>
+        </section>
+    </div>
+
+</body>
+</html>

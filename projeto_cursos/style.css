@@ -40,8 +40,8 @@ header p{
     max-width: 1300px;
     margin: auto;
 }
-.card h2{
-    color: rgb(68, 204, 181);
+.card h3{
+    color: rgb(240, 239, 243);
     text-align: center;
 }
 .card p{
@@ -91,4 +91,9 @@ footer p{
 .card button:hover{
   background-color: rgb(255, 0, 0);   
 
+}
+
+button a{
+    text-decoration: none;
+    color: rgb(15, 15, 15);
 }

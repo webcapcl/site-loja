@@ -96,8 +96,12 @@ border:none;
 
 border-radius:5px;
 
-background:#2563eb;
+background:#ccced1;
 
-color:white;
+color:rgb(8, 8, 8);
 
+}
+button a{
+    text-decoration: none;
+    color: rgb(10, 10, 10);
 }
